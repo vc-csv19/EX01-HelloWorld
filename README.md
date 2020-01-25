@@ -38,7 +38,7 @@ Once you see this text in the Terminal tab at the bottom of CLion, then you can 
 This assignment is meant to work on an Arm processor using an Arm toolchain. To properly complete this assignment, complete 
 the following steps:
 
-1. Navigate to `File -> Settings` and then click the triangle next to `Build, Execution, Deployment` and select `Toolchain`.
+1. Navigate to `File -> Settings` and then click the triangle next to `Build, Execution, Deployment` and select `Toolchains`.
    Under toolchain select `Docker Arm Host` and then press the up arrow at the top to move this tool chain to the very top 
    of the list, making it the default tool chain.
 2. Press the `OK` button
