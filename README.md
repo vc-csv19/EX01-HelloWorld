@@ -4,7 +4,7 @@ The objective of this exercise is to familiarize yourself
 with the programming environment, working with the QEMU emulator and
 to familiarize yourself with your first assemply program. 
 
-The first thing you will need to do is accept the invitation to this assignment from GitHub Classroom. You can click [here](https://classroom.github.com/a/SaTUhxBc) to accept the invitation, and then follow the instructions here to get started.
+The first thing you will need to do is accept the invitation to this assignment from GitHub Classroom. You can click [here](https://classroom.github.com/a/q31r6eVI) to accept the invitation, and then follow the instructions here to get started.
 
 Be sure that you accept the invitation first and use the URL from the your new project when you clone it in CLion.
 
