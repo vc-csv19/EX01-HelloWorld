@@ -136,8 +136,6 @@ Process finished with exit code 0
 
 ### Submitting the code for this project
 
-Before submitting your code the first time, you will need to add a webhook to this project to trigger the build in the cloud. This process is simple, and only required once per assignment. First, go to the **Settings** tab at the top of this page. It's right next to **Insights**. Then along the left side select **Webhooks**. On the Webhooks page click **Add Webhook** and copy http://209.129.49.16:8080/github-webhook/ into the **Payload URL** input box and then click **Add Webhook**. That's it. Every time you push code now, a new build will test your latest changes. The results are pasted to the #build channel in slack.
-
 First, right click on the project name, then select `Git -> Commit Directory...`. 
 Make sure only the files you want to push are selected, `main.s`. Then uncheck `Perform code analysis` and `Check TODO`. It's OK to leave them checked, but committing will take longer. Leave `Run git hooks` unchecked as well. Put a message in `Commit Message`. Press the down arrow next to **Commit** and then select **Commit and Push** button. Once the commit is finished, press the **Push** button. If anything goes wrong check the _Version Control_ view
 in the lower left corner and select the _Console_ tab.
