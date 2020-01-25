@@ -8,11 +8,12 @@ set -eux
 
 # Parameters.
 # This filename may need updating, check http://cdimage.ubuntu.com/releases/18.04/release/
-id=ubuntu-18.04.3-server-arm64
-location=/opt/vc-csv19-dev/
+id=ubuntu-18.04.3-arm64
+dir=/opt/vc-csv19-dev
 #id=debian-9.6.0-arm64-xfce-CD-1
 img="${id}.img.qcow2"
-img_snapshot="${id}.img.snapshot.qcow2"
+img_snapshot="${id}.img.shrunk.qcow2"
+iso="mini.iso"
 flash0="${id}-flash0.img"
 flash1="${id}-flash1.img"
 
@@ -38,14 +39,13 @@ qemu-system-aarch64 \
   -cpu cortex-a57 \
   -device rtl8139,netdev=net0 \
   -device virtio-scsi-device \
-  -device scsi-cd,drive=cdrom \
   -device virtio-blk-device,drive=hd0 \
-  -drive "if=none,file=${location}/${img_snapshot},id=hd0" \
-  -m 2G \
+  -drive "if=none,file=${dir}/${img_snapshot},id=hd0" \
+  -m 1.5G \
   -machine virt \
   -netdev user,id=net0,hostfwd=tcp::5022-:22 \
   -nographic \
-  -pflash "$location/$flash0" \
-  -pflash "$location/$flash1" \
+  -pflash "$dir/$flash0" \
+  -pflash "$dir/$flash1" \
   -smp 2 \
 ;
