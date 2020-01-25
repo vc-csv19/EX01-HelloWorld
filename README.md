@@ -141,4 +141,12 @@ Make sure only the files you want to push are selected, `main.s`. Then uncheck `
 in the lower left corner and select the _Console_ tab.
  
 If you forget to do the command and push at the same time, right click on the project name, then select `Git -> Repository -> Push...`. Follow the onscreen directions
-and press **OK**. This step will then submit them to the cloud to have the tests run for grading.
+and press **OK**. This step will then submit them to the cloud.
+
+### Turning in and Grading your code
+
+Go back to LazyGrader and login again, if needed. Press the _Build_ button next to **EX01-HelloWorld** for this course. This will send a command to Jenkins to download your code from GitHub and test it. If all goes well and all the tests pass, the ball next to the Build will turn blue. If some of the tests don't pass the ball will be yellow. If the ball is grey, that means you have not run the tests before and your project is not ready for grading.
+
+Once the Jenkins status is blue or yellow, press the _Grade_ button for **EX01-HelloWorld**. This will read the results from Jenkins and send your grade to Canvas. Once the notification in LazyGrader says the grade has been posted, you should see your grade on Canvas.
+
+That's it, once you've submitted your grade, you are done. I will add points later, after I inspect your code. For example, most projects will be out of a total of 25 points, but after pressing the Grade button, Canvas will show 20 points. I will add up to 5 points after I have looked at your code and am conviced it is original.
