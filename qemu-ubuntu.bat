@@ -1,4 +1,4 @@
-"C:\Program File\qemu\qemu-system-aarch64"^
+"C:\Program Files\qemu\qemu-system-aarch64"^
   -cpu cortex-a57^
   -device rtl8139,netdev=net0^
   -device virtio-scsi-device^
